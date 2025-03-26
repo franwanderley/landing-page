@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { Geist, Ubuntu } from "next/font/google";
 import "./globals.css";
+import Image from "next/image";
+import { Button } from "../components/Button";
+import Logo from '../images/logo.svg';
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
+const geistUbuntu = Ubuntu({ subsets: ["latin"], weight: ["400", "700"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,11 +23,57 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="pt-BR">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistUbuntu.className} antialiased`}
       >
+        <header>
+          <div>
+            <Image src={Logo} alt="logo blogger" width={24} height={24} />
+            <nav>
+              <li>Product</li>
+              <li>Company</li>
+              <li>Connect</li>
+              <li>
+                <Button title="Login" buttonStyle="transparent" />
+              </li>
+              <li>
+              <Button title="Sign Up" buttonStyle="color" />
+              </li>
+            </nav>
+          </div>
+        </header>
         {children}
+        <footer>
+        <Image src={Logo} alt="logo blogger" />
+        <div>
+          <h4>Product</h4>
+          <nav>
+            <li>Overview</li>
+            <li>Pricing</li>
+            <li>Marketplace</li>
+            <li>Features</li>
+            <li>Integrations</li>
+          </nav>
+        </div>
+        <div>
+        <h4>Company</h4>
+          <nav>
+            <li>About</li>
+            <li>Team</li>
+            <li>Blog</li>
+            <li>Careers</li>
+          </nav>
+        </div>
+        <div>
+        <h4>Connect</h4>
+          <nav>
+            <li>Contact</li>
+            <li>Newsletter</li>
+            <li>Linkedin</li>
+          </nav>
+        </div>
+        </footer>
       </body>
     </html>
   );
