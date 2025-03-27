@@ -27,50 +27,48 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistUbuntu.className} antialiased`}
       >
-        <header>
-          <div>
-            <Image src={Logo} alt="logo blogger" width={24} height={24} />
-            <nav>
-              <li>Product</li>
-              <li>Company</li>
-              <li>Connect</li>
-              <li>
-                <Button title="Login" buttonStyle="transparent" />
-              </li>
-              <li>
-              <Button title="Sign Up" buttonStyle="color" />
-              </li>
-            </nav>
+        <header className="flex justify-around flex-row bg-bg-header p-5">
+          <Image src={Logo} alt="logo blogger" className="ml-0" />
+          <nav className="flex flex-row gap-4 text-white cursor-pointer">
+            <li className="list-none">Product</li>
+            <li className="list-none">Company</li>
+            <li className="list-none">Connect</li>
+          </nav>
+          <div className="flex flex-row gap-4">
+          <Button title="Login" buttonStyle="transparent" />
+          <Button title="Sign Up" buttonStyle="color" />
           </div>
         </header>
         {children}
-        <footer>
-        <Image src={Logo} alt="logo blogger" />
+        <footer className="bg-bg-footer text-[#666673] flex flex-row justify-around p-4 rounded-tr-[5rem]">
         <div>
-          <h4>Product</h4>
+          <Image src={Logo} alt="logo blogger" className="align-middle" />
+        </div>
+        <div>
+          <h4 className="mb-2 mt-2 font-bold text-white">Product</h4>
           <nav>
-            <li>Overview</li>
-            <li>Pricing</li>
-            <li>Marketplace</li>
-            <li>Features</li>
-            <li>Integrations</li>
+            <li className="list-none text-sm mb-2 font-normal cursor-pointer">Overview</li>
+            <li className="list-none text-sm mb-2 font-normal cursor-pointer">Pricing</li>
+            <li className="list-none text-sm mb-2 font-normal cursor-pointer">Marketplace</li>
+            <li className="list-none text-sm mb-2 font-normal cursor-pointer">Features</li>
+            <li className="list-none text-sm mb-2 font-normal cursor-pointer">Integrations</li>
           </nav>
         </div>
         <div>
-        <h4>Company</h4>
+        <h4 className="mb-2 mt-2 font-bold text-white">Company</h4>
           <nav>
-            <li>About</li>
-            <li>Team</li>
-            <li>Blog</li>
-            <li>Careers</li>
+            <li className="list-none text-sm mb-2 font-normal cursor-pointer">About</li>
+            <li className="list-none text-sm mb-2 font-normal cursor-pointer">Team</li>
+            <li className="list-none text-sm mb-2 font-normal cursor-pointer">Blog</li>
+            <li className="list-none text-sm mb-2 font-normal cursor-pointer">Careers</li>
           </nav>
         </div>
         <div>
-        <h4>Connect</h4>
+        <h4 className="mb-2 mt-2 font-bold text-white">Connect</h4>
           <nav>
-            <li>Contact</li>
-            <li>Newsletter</li>
-            <li>Linkedin</li>
+            <li className="list-none text-sm mb-2 font-normal cursor-pointer">Contact</li>
+            <li className="list-none text-sm mb-2 font-normal cursor-pointer">Newsletter</li>
+            <li className="list-none text-sm mb-2 font-normal cursor-pointer">Linkedin</li>
           </nav>
         </div>
         </footer>

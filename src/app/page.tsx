@@ -6,33 +6,35 @@ import illustrationLaptopDesktop from '../images/illustration-laptop-desktop.svg
 
 export default function Home() {
   return (
-    <div>
-      <h1>A modern publishing platform</h1>
-      <span>Grow your audience and build your online brand</span>
-      <div>
-        <Button title="Start For Free" buttonStyle="color" />
-        <Button title="Learn More" buttonStyle="transparent" />
-      </div>
-      <main>
-        <h2>Designed for the future</h2>
+    <main>
+      <div className="bg-[url(../images/bg-pattern-intro-desktop.svg)] h-20">
+        <h1 className="text-4xl text-white">A modern publishing platform</h1>
+        <span className="text-md text-white font-normal">Grow your audience and build your online brand</span>
         <div>
+          <Button title="Start For Free" buttonStyle="color" />
+          <Button title="Learn More" buttonStyle="transparent" />
+        </div>
+      </div>
+      <div>
+        <h2 className="text-[#2f414d] text-2xl text-center">Designed for the future</h2>
+        <div className="flex flex-row justify-between">
           <div>
-            <h3>Introducing an extensible editor</h3>
+            <h3 className="text-[#2f414d] text-xl">Introducing an extensible editor</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
               Fugiat a optio et dolores ab fugit, accusamus tenetur error nemo exercitationem. 
               Doloribus minus aspernatur molestiae iste. Sequi dolorem tempora nihil temporibus?
             </p>
-            <h3>Robust content management</h3>
+            <h3 className="text-[#2f414d] text-xl">Robust content management</h3>
             <p>
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                Aspernatur, molestias. Magnam ab reiciendis vel, minus ipsum voluptate vero in magni placeat!
                Tenetur sint quo iusto similique quasi deserunt qui mollitia.
             </p>
           </div>
-          <Image src={illustrationEditorDesktop} alt="ILLUSTRATION" width="24" height="24" />
+          <Image src={illustrationEditorDesktop} alt="ILLUSTRATION" />
         </div>
-      </main>
+      </div>
       <div>
         <Image src={illustrationPhones} alt="State of the Art Infrastructure" width="24" height="24" />
         <h3>State of the Art Infrastructure</h3>
@@ -60,6 +62,6 @@ export default function Home() {
           </p>
         </div>
       </div>
-    </div>
+    </main>
   );
 }
