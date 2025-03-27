@@ -15,47 +15,60 @@ export default function Home() {
           <Button title="Learn More" buttonStyle="transparent" />
         </div>
       </div>
-      <div>
-        <h2 className="text-[#2f414d] text-2xl text-center">Designed for the future</h2>
-        <div className="flex flex-row justify-between">
-          <div>
-            <h3 className="text-[#2f414d] text-xl">Introducing an extensible editor</h3>
-            <p>
+      <div className="m-4 mr-0">
+        <h2 className="text-[#2f414d] text-2xl text-center mb-3">Designed for the future</h2>
+        <div className="flex flex-row justify-start">
+          <div className="">
+            <h3 className="text-[#2f414d] text-xl mb-3">Introducing an extensible editor</h3>
+            <p className="text-[#666673] font-normal mb-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
               Fugiat a optio et dolores ab fugit, accusamus tenetur error nemo exercitationem. 
               Doloribus minus aspernatur molestiae iste. Sequi dolorem tempora nihil temporibus?
             </p>
-            <h3 className="text-[#2f414d] text-xl">Robust content management</h3>
-            <p>
+            <h3 className="text-[#2f414d] text-xl mb-3">Robust content management</h3>
+            <p className="text-[#666673] font-normal mb-3">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                Aspernatur, molestias. Magnam ab reiciendis vel, minus ipsum voluptate vero in magni placeat!
                Tenetur sint quo iusto similique quasi deserunt qui mollitia.
             </p>
           </div>
-          <Image src={illustrationEditorDesktop} alt="ILLUSTRATION" />
+          <Image 
+            src={illustrationEditorDesktop} 
+            alt="ILLUSTRATION" 
+            width={500} 
+            className="align-top relative right-[-160px] mt-[-80px]" 
+          />
         </div>
       </div>
-      <div>
-        <Image src={illustrationPhones} alt="State of the Art Infrastructure" width="24" height="24" />
-        <h3>State of the Art Infrastructure</h3>
-        <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-           Esse fugiat voluptatum ducimus magni soluta harum alias tenetur iste. 
-           Reiciendis sequi tenetur aperiam quaerat totam assumenda. 
-           Ipsam eveniet officiis error enim.
-        </p>
+      <div 
+        className="flex flex-row justify-start items-center p-2 h-[350] bg-[#393a56] rounded-bl-[6rem] rounded-tr-[6rem]"
+      >
+        <Image src={illustrationPhones} alt="State of the Art Infrastructure" width={500} />
+       <div>
+        <h3 className="text-white text-xl mb-3">State of the Art Infrastructure</h3>
+          <p className="text-white font-normal mb-3">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+            Esse fugiat voluptatum ducimus magni soluta harum alias tenetur iste. 
+            Reiciendis sequi tenetur aperiam quaerat totam assumenda. 
+            Ipsam eveniet officiis error enim.
+          </p>
+       </div>
       </div>
-      <div>
-        <Image src={illustrationLaptopDesktop} alt="State of the Art Infrastructure" width="24" height="24" />
+      <div className="flex flex-row justify-start mt-16">
+        <Image src={illustrationLaptopDesktop} 
+          alt="State of the Art Infrastructure" 
+          width={500}
+          className="align-top relative left-[-140px] mt-[-90px]"
+        />
         <div>
-          <h3>Free, Open, Simple</h3>
-          <p>
+          <h3 className="text-[#2f414d] text-xl mb-3">Free, Open, Simple</h3>
+          <p className="text-[#666673] font-normal mb-3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Fugiat a optio et dolores ab fugit, accusamus tenetur error nemo exercitationem. 
             Doloribus minus aspernatur molestiae iste. Sequi dolorem tempora nihil temporibus?
           </p>
-          <h3>Powerful tooling</h3>
-          <p>
+          <h3 className="text-[#2f414d] text-xl mb-3">Powerful tooling</h3>
+          <p className="text-[#666673] font-normal mb-3">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Aspernatur, molestias. Magnam ab reiciendis vel, minus ipsum voluptate vero in magni placeat!
               Tenetur sint quo iusto similique quasi deserunt qui mollitia.
