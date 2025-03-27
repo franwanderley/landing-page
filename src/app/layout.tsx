@@ -25,7 +25,7 @@ export default function RootLayout({
   return (
     <html lang="pt-BR">
       <body
-        className={`${geistSans.variable} ${geistUbuntu.className} antialiased`}
+        className={`${geistSans.variable} ${geistUbuntu.className} antialiased overflow-x-hidden`}
       >
         <header className="flex justify-around flex-row bg-bg-header p-5">
           <Image src={Logo} alt="logo blogger" className="ml-0" />
