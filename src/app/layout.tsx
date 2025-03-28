@@ -4,6 +4,7 @@ import "./globals.css";
 import Image from "next/image";
 import { Button } from "../components/Button";
 import Logo from '../images/logo.svg';
+import { HeaderMobile } from "@/components/HeaderMobile";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -27,17 +28,18 @@ export default function RootLayout({
       <body
         className={`${geistSans.variable} ${geistUbuntu.className} antialiased overflow-x-hidden`}
       >
-        <header className="flex justify-around flex-row bg-bg-header p-5">
+        <header className="flex md:justify-around justify-between flex-row bg-bg-header p-5">
           <Image src={Logo} alt="logo blogger" className="ml-0" />
-          <nav className="flex flex-row gap-4 text-white cursor-pointer">
+          <nav className="hidden flex-row gap-4 text-white cursor-pointer md:flex">
             <li className="list-none">Product</li>
             <li className="list-none">Company</li>
             <li className="list-none">Connect</li>
           </nav>
-          <div className="flex flex-row gap-4">
-          <Button title="Login" buttonStyle="transparent" />
-          <Button title="Sign Up" buttonStyle="color" />
+          <div className="hidden flex-row gap-4 md:flex">
+            <Button title="Login" buttonStyle="transparent" />
+            <Button title="Sign Up" buttonStyle="color" />
           </div>
+          <HeaderMobile />
         </header>
         {children}
         <footer className="bg-bg-footer text-[#666673] flex flex-row justify-around p-4 rounded-tr-[5rem]">
