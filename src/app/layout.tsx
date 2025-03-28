@@ -42,9 +42,9 @@ export default function RootLayout({
           <HeaderMobile />
         </header>
         {children}
-        <footer className="bg-bg-footer text-[#666673] flex flex-row justify-around p-4 rounded-tr-[5rem]">
+        <footer className="bg-bg-footer text-[#666673] flex md:flex-row flex-col md:justify-around items-center p-4 rounded-tr-[5rem]">
         <div>
-          <Image src={Logo} alt="logo blogger" className="align-middle" />
+          <Image src={Logo} alt="logo blogger" className="align-middle mb-6 mt-4 mt:mb-0 mt:mt-0" />
         </div>
         <div>
           <h4 className="mb-2 mt-2 font-bold text-white">Product</h4>

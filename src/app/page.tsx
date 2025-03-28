@@ -26,13 +26,13 @@ export default function Home() {
         <div className="flex md:flex-row flex-col-reverse justify-start items-center">
           <div>
             <h3 className="text-[#2f414d] text-xl mb-3">Introducing an extensible editor</h3>
-            <p className="text-justify p-2 text-[#666673] font-normal mb-3">
+            <p className="text-justify p-4 md:p-0 text-[#666673] font-normal mb-3">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. 
               Fugiat a optio et dolores ab fugit, accusamus tenetur error nemo exercitationem. 
               Doloribus minus aspernatur molestiae iste. Sequi dolorem tempora nihil temporibus?
             </p>
-            <h3 className="text-[#2f414d] text-xl mb-3">Robust content management</h3>
-            <p className="text-justify p-2 text-[#666673] font-normal mb-3">
+            <h3 className="p-2 text-[#2f414d] text-xl mb-3">Robust content management</h3>
+            <p className="text-justify p-4 md:p-0 text-[#666673] font-normal mb-3">
               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                Aspernatur, molestias. Magnam ab reiciendis vel, minus ipsum voluptate vero in magni placeat!
                Tenetur sint quo iusto similique quasi deserunt qui mollitia.
@@ -56,8 +56,8 @@ export default function Home() {
       >
         <Image src={illustrationPhones} alt="State of the Art Infrastructure" width={500} />
        <div>
-        <h3 className="text-white text-xl mb-3">State of the Art Infrastructure</h3>
-          <p className="text-justify p-2 text-white font-normal mb-3">
+        <h3 className="p-2 text-white text-xl mb-3">State of the Art Infrastructure</h3>
+          <p className="text-justify p-4 md:p-0 text-white font-normal mb-3">
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
             Esse fugiat voluptatum ducimus magni soluta harum alias tenetur iste. 
             Reiciendis sequi tenetur aperiam quaerat totam assumenda. 
@@ -77,14 +77,14 @@ export default function Home() {
           className="align-top block md:hidden"
         />
         <div>
-          <h3 className="text-[#2f414d] text-xl mb-3">Free, Open, Simple</h3>
-          <p className="text-justify p-2 text-[#666673] font-normal mb-3">
+          <h3 className="p-2 text-[#2f414d] text-xl mb-3">Free, Open, Simple</h3>
+          <p className="text-justify p-4 md:p-0 text-[#666673] font-normal mb-3">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
             Fugiat a optio et dolores ab fugit, accusamus tenetur error nemo exercitationem. 
             Doloribus minus aspernatur molestiae iste. Sequi dolorem tempora nihil temporibus?
           </p>
-          <h3 className="text-[#2f414d] text-xl mb-3">Powerful tooling</h3>
-          <p className="text-justify p-2 text-[#666673] font-normal mb-3">
+          <h3 className="p-2 text-[#2f414d] text-xl mb-3">Powerful tooling</h3>
+          <p className="text-justify p-4 md:p-0 text-[#666673] font-normal mb-3">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit.
               Aspernatur, molestias. Magnam ab reiciendis vel, minus ipsum voluptate vero in magni placeat!
               Tenetur sint quo iusto similique quasi deserunt qui mollitia.
